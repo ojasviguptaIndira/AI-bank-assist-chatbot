@@ -1,0 +1,23 @@
+MySQL Schema Recommendation
+===========================
+
+Recommendation
+--------------
+Primary Key
+Loan.id
+Reviews.review_id (synthetic auto-increment recommended)
+Bank.bank_id (dimension table)
+
+Indexes
+Loan: loan_amnt, int_rate, annual_inc, id, member_id
+Reviews: bank, rating, date, useful_count
+Bank: bank_name unique index
+
+Analytics Columns
+Loan: loan_amnt, int_rate, annual_inc, grade, purpose, loan_status, addr_state
+Reviews: bank, rating, sentiment_label, useful_count, date
+
+Recommended Tables
+Loan fact table
+Reviews fact table
+Bank dimension table

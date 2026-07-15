@@ -1,0 +1,2 @@
+"""DuckDB analytics engine package."""
+

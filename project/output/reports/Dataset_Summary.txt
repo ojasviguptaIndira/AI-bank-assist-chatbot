@@ -1,0 +1,53 @@
+Dataset Summary
+===============
+
+Loan Dataset Summary
+--------------------
+dataset  rows  columns  duplicate_rows  missing_percent  memory_usage_mb  numeric_columns  categorical_columns
+Loan Dataset 39717      111               0            51.34            85.52               89                   22
+
+Review Dataset Summary
+----------------------
+dataset  rows  columns  duplicate_rows  missing_percent  memory_usage_mb  numeric_columns  categorical_columns
+Review Dataset  1000       13               0             2.22             1.14                3                   10
+
+Loan Missing Report
+-------------------
+column  missing_count  missing_percent recommendation
+       acc_open_past_24mths          39717            100.0           DROP
+                   all_util          39717            100.0           DROP
+           annual_inc_joint          39717            100.0           DROP
+                avg_cur_bal          39717            100.0           DROP
+             bc_open_to_buy          39717            100.0           DROP
+                    bc_util          39717            100.0           DROP
+                  dti_joint          39717            100.0           DROP
+                    il_util          39717            100.0           DROP
+                     inq_fi          39717            100.0           DROP
+               inq_last_12m          39717            100.0           DROP
+                 max_bal_bc          39717            100.0           DROP
+         mo_sin_old_il_acct          39717            100.0           DROP
+       mo_sin_old_rev_tl_op          39717            100.0           DROP
+      mo_sin_rcnt_rev_tl_op          39717            100.0           DROP
+             mo_sin_rcnt_tl          39717            100.0           DROP
+                   mort_acc          39717            100.0           DROP
+mths_since_last_major_derog          39717            100.0           DROP
+         mths_since_rcnt_il          39717            100.0           DROP
+       mths_since_recent_bc          39717            100.0           DROP
+   mths_since_recent_bc_dlq          39717            100.0           DROP
+
+Review Missing Report
+---------------------
+column  missing_count  missing_percent recommendation
+                bank            285             28.5         IMPUTE
+              author              4              0.4           KEEP
+             address              0              0.0           KEEP
+          bank_image              0              0.0           KEEP
+        clean_review              0              0.0           KEEP
+                date              0              0.0           KEEP
+              rating              0              0.0           KEEP
+rating_title_by_user              0              0.0           KEEP
+              review              0              0.0           KEEP
+       review_length              0              0.0           KEEP
+review_title_by_user              0              0.0           KEEP
+     sentiment_label              0              0.0           KEEP
+        useful_count              0              0.0           KEEP

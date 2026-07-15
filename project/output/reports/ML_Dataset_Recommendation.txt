@@ -1,0 +1,18 @@
+ML Dataset Recommendation
+=========================
+
+Recommendation
+--------------
+Loan Modeling Recommendation
+Features: loan_amnt, int_rate, annual_inc, id, member_id, funded_amnt, funded_amnt_inv, installment
+Target: loan_status
+Dropped Columns: mths_since_last_record, next_pymnt_d, mths_since_last_major_derog, annual_inc_joint, dti_joint, verification_status_joint, tot_coll_amt, tot_cur_bal, open_acc_6m, open_il_6m, open_il_12m, open_il_24m, mths_since_rcnt_il, total_bal_il, il_util
+Synthetic Data Requirement: Not recommended until class imbalance is measured after target cleanup.
+Class Balance: Fully Paid: 82.96%, Charged Off: 14.17%, Current: 2.87%
+
+Review Sentiment Recommendation
+Features: clean_review, rating, bank, useful_count, review_length
+Target: sentiment_label
+Dropped Columns: bank_image
+Synthetic Data Requirement: Consider augmentation only if Dissatisfied reviews are underrepresented.
+Class Balance: Satisfied: 85.2%, Dissatisfied: 7.7%, Average: 7.1%

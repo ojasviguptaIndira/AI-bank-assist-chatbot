@@ -1,2 +1,0 @@
-"""Sentiment classification engine package."""
-
